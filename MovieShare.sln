@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieShare", "MovieShare.csproj", "{29A0CD4E-C06A-43FA-948E-0400A2A42093}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A0CD4E-C06A-43FA-948E-0400A2A42093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A0CD4E-C06A-43FA-948E-0400A2A42093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A0CD4E-C06A-43FA-948E-0400A2A42093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A0CD4E-C06A-43FA-948E-0400A2A42093}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3DCA3D7-8FB3-4048-A34C-C037744B04EA}
+	EndGlobalSection
+EndGlobal
