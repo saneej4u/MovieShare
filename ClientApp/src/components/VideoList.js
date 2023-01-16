@@ -17,10 +17,19 @@ export class VideoList extends Component {
         return (
             <div class="container">
                 <div class="row">
-                    {videos.map((video) => <div class="col-4 col-md-4" key={video.id}>
-                        <div>
-                            <iframe width="100%" src={video.videoLinks} title="YouTube video1" allowfullscreen></iframe>
+                    {videos.map((video) => <div class="col-12 col-md-12 px-2 p-4" key={video.id}>
+
+                        <div class="row px-2">
+                            <div class="col-6 col-md-6">
+                                <iframe width="100%" height="300" src={video.videoLinks} title="YouTube video1" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-6 col-md-6">
+                                <h3> {video.title} </h3>
+                                <strong>Description </strong>
+                                <p>  {video.description}</p>
+                            </div>
                         </div>
+
                     </div>)}
                 </div>
             </div>

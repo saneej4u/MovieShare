@@ -9,19 +9,24 @@ namespace MovieShare.Controllers
     [ApiController]
     public class VideosController : ControllerBase
     {
-
         private readonly ApplicationDbContext _context;
         public VideosController(ApplicationDbContext context)
         {
             _context = context;
         }
-        // GET: api/Videos
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Video>>> GetVideos()
-        {
 
-            var test = await _context.Videos.ToListAsync();
-            return Ok(test);
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<VideoViewModel>>> GetVideos()
+        {
+            var videoEntity = await _context.Videos.ToListAsync();
+            var viewModel = videoEntity.Select(x => new VideoViewModel
+            {
+                Title = x.Title,
+                Description = x.Description,
+                VideoLinks = x.VideoLinks
+            });
+
+            return Ok(viewModel);
         }
     }
 }
